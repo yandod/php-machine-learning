@@ -1,0 +1,18 @@
+{
+    "name": "yandod/php-macihne-learning",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Yandod\\PhpMacihneLearning\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yandod"
+        }
+    ],
+    "require": {
+        "kambo/llama-cpp-php": "dev-main",
+        "kambo/llama-cpp-php-linux-lib": "dev-main"
+    }
+}

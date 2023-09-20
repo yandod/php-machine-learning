@@ -1,0 +1,17 @@
+version: '3'
+services:
+  php:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    working_dir: /var/www/html
+    volumes:
+      - ./app:/var/www/html:cached
+    ports:
+      - "80:80"
+  composer:
+    image: composer:2.6
+    working_dir: /var/www/html
+    volumes:
+      - ./app:/var/www/html:cached
+    command: composer install
